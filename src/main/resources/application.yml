@@ -1,0 +1,10 @@
+test:
+  timeout: 5000
+  maximized: true
+  headless: false
+  browser: chrome
+  version: 87
+
+
+ui:
+  url: https://appfollow.io/ru
