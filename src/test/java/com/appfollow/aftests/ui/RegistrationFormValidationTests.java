@@ -1,18 +1,17 @@
-package com.appfollow.aftests;
+package com.appfollow.aftests.ui;
 
 import com.appfollow.aftests.before.InitTest;
 import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.*;
 
+@Tag("ui-tests")
 @SpringBootTest
-class NewUserRegistrationTests extends InitTest {
+class RegistrationFormValidationTests extends InitTest {
 
 	@BeforeEach
 	private void openStartPage() {

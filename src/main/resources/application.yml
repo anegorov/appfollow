@@ -5,6 +5,9 @@ test:
   browser: chrome
   version: 87
 
-
 ui:
-  url: https://appfollow.io/ru
+  url: https://appfollow.io/ru/
+
+api:
+  url: https://api.appfollow.io/
+  secret: Basic eXBWZlVEV3NFRENGUFY3NXBkakw6

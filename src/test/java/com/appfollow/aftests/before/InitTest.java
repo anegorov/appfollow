@@ -6,9 +6,11 @@ import com.appfollow.aftests.pages.RegistrationPage;
 import com.appfollow.aftests.pages.StartPage;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class InitTest {
 
     @Autowired @Lazy private TestConfig testConfig;
